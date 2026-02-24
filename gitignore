@@ -1,0 +1,11 @@
+# Environment variables - never commit secrets
+.env
+*.env
+
+# NPM runtime data - no need to track these
+data/
+letsencrypt/
+
+# OS files
+.DS_Store
+Thumbs.db
