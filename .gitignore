@@ -1,11 +1,47 @@
-# Environment variables - never commit secrets
-.env
-*.env
+# ========================
+# OS - Windows
+# ========================
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.lnk
 
-# NPM runtime data - no need to track these
+# ========================
+# IDE - JetBrains
+# ========================
+.idea/
+*.iml
+*.iws
+*.ipr
+out/
+
+# ========================
+# Nginx Proxy Manager
+# ========================
+# Environment files with secrets
+.env
+.env.*
+!.env.example
+
+# NPM data directories
 data/
 letsencrypt/
+volumes/
 
-# OS files
-.DS_Store
-Thumbs.db
+# SSL certs and keys
+*.key
+*.pem
+*.crt
+*.p12
+*.pfx
+certs/
+secrets/
+
+# Logs
+*.log
+logs/
+
+# Backup files
+*.bak
+*.backup
